@@ -1,9 +1,9 @@
-import Button from "../Button/Button";
-import PText from "../PText/PText";
-import { SocialData } from "../../Assets/Data/SocialData";
+import Button from "../../Button/OutButton";
+import PText from "../../PText/PText";
+import { SocialData } from "../../../Assets/Data/SocialData";
 
-import SocialMediaArrow from "../../Assets/Images/social-media-arrow.svg"
-import ScrollDownArrow from "../../Assets/Images/scroll-down-arrow.svg"
+import SocialMediaArrow from "../../../Assets/Images/social-media-arrow.svg"
+import ScrollDownArrow from "../../../Assets/Images/scroll-down-arrow.svg"
 
 import { HeroSectionStyles } from "./styles";
 
