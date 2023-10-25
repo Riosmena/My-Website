@@ -2,14 +2,14 @@ import styled from "styled-components"
 
 export const AboutPageStyles = styled.div`
     padding: 20rem 0 10rem 0;
-
+    
     .top-section {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
     }
-
+    
     .left {
         flex: 3;
     }
@@ -32,7 +32,7 @@ export const AboutPageStyles = styled.div`
         font-size: 3.6rem;
         margin-bottom: 3rem;
     }
-
+    
     .about_info {
         margin-bottom: 4rem;
         .para {
@@ -45,35 +45,35 @@ export const AboutPageStyles = styled.div`
             border: 2px solid var(--gray-1);
         }
     }
-
+    
     .about_info_items {
         margin-top: 15rem;
     }
-
+    
     .about_info_item {
         margin-bottom: 10rem;
     }
-
+    
     .about_info_heading {
         font-size: 3.6rem;
         text-transform: uppercase;
     }
-
+    
     @media only screen and (max-width: 768px) {
         padding: 10rem 0;
         .top-section {
             flex-direction: column;
             gap: 5rem;
         }
-
+        
         .about_subheading {
             font-size: 1.8rem;
         }
-
+        
         .about_heading {
             font-size: 2.8rem;
         }
-
+        
         .about_info_heading {
             font-size: 3rem;
         }

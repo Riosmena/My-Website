@@ -9,7 +9,7 @@ const AboutItem = ({ title, items }) => {
             <div className="items">
                 {items.map((item, index) => (
                     <div className="item" key={index}>
-                        <PText>{items}</PText>
+                        <PText>{item}</PText>
                     </div>
                 ))}
             </div>

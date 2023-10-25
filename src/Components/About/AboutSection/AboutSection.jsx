@@ -19,7 +19,7 @@ const AboutSection = () => {
                             </p>
 
                             <h2 className="about_heading">
-                                A Computer Science Student at ITESM QRO
+                                A Computer Science Student from ITESM QRO
                             </h2>
 
                             <div className="about_info">
