@@ -41,8 +41,8 @@ const HeroSection = () => {
                             {SocialData.map((item, index) => (
                                 <li>
                                     <a
-                                        key={index}
                                         href={item.link}
+                                        key={index}
                                         target="_blank"
                                         rel="noreferrer"
                                     >

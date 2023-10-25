@@ -1,7 +1,7 @@
 export const SocialData = [
     {
         title: "FB",
-        link: "https://www.facebook.com/emiliano.riosmena.6/",
+        link: "https://www.facebook.com/emiliano.riosmena/",
     },
     {
         title: "IG",
