@@ -1,80 +1,81 @@
 import styled from "styled-components"
 
-export const AboutSectionStyles = styled.div`
-    padding: 10rem 0;
+export const AboutPageStyles = styled.div`
+    padding: 20rem 0 10rem 0;
 
-    .container {
+    .top-section {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    .aboutSection__left,
-    .aboutSection__right {
-        flex: 1;
-    }
-
-    .section__title {
-        text-align: left;
-    }
-
-    .para {
-        margin-top: 2rem;
-        margin-left: 0;
-    }
-
-    .aboutSection__buttons {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 2rem;
-        margin-top: 2rem;
     }
 
-    @media only screen and (max-width: 950px) {
-        .aboutSection__left {
-            flex: 4;
-        }
+    .left {
+        flex: 3;
+    }
 
-        .aboutSection__right {
-            flex: 3;
+    .right {
+        flex: 2;
+    }
+
+    .about_subheading {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        span {
+            background-color: var(--deep-dark);
+            padding: 0.5rem;
+            border-radius: 8px;
         }
+    }
+
+    .about_heading {
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .about_info {
+        margin-bottom: 4rem;
+        .para {
+            max-width: 100%;
+        }
+    }
+
+    .right {
+        img {
+            border: 2px solid var(--gray-1);
+        }
+    }
+
+    .about_info_items {
+        margin-top: 15rem;
+    }
+
+    .about_info_item {
+        margin-bottom: 10rem;
+    }
+
+    .about_info_heading {
+        font-size: 3.6rem;
+        text-transform: uppercase;
     }
 
     @media only screen and (max-width: 768px) {
-        .container {
+        padding: 10rem 0;
+        .top-section {
             flex-direction: column;
-            text-align: center;
+            gap: 5rem;
         }
 
-        .aboutSection__left,
-        .aboutSection__right {
-            width: 100%;
+        .about_subheading {
+            font-size: 1.8rem;
         }
 
-        .aboutSection__right {
-            margin-top: 3rem;
+        .about_heading {
+            font-size: 2.8rem;
         }
 
-        .section__title {
-            text-align: center;
-        }
-
-        .para {
-            margin: 0 auto;
-            margin-top: 2rem;
-        }
-
-        .aboutSection__buttons {
-            flex-direction: column;
-            gap: 0;
-
-            .button__wrapper,
-            a {
-                width: 100%;
-                text-align: center;
-            }
+        .about_info_heading {
+            font-size: 3rem;
         }
     }
 `
