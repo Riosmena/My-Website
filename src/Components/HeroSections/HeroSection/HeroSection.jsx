@@ -1,11 +1,10 @@
-import Button from "../../Button/OutButton";
-import PText from "../../PText/PText";
-import { SocialData } from "../../../Assets/Data/SocialData";
+import PText from "../../PText/PText"
+import { SocialData } from "../../../Assets/Data/SocialData"
+import { HeroSectionStyles } from "./styles"
 
-import SocialMediaArrow from "../../../Assets/Images/social-media-arrow.svg"
 import ScrollDownArrow from "../../../Assets/Images/scroll-down-arrow.svg"
-
-import { HeroSectionStyles } from "./styles";
+import SocialMediaArrow from "../../../Assets/Images/social-media-arrow.svg"
+import HeroImg from "../../../Assets/Images/hero.jpg"
 
 const HeroSection = () => {
     return (
@@ -13,44 +12,44 @@ const HeroSection = () => {
             <div className="hero">
                 <div className="container">
                     <h1 className="hero_heading">
-                        <span className="name">Hi, I'm</span>
-                        <span className="name">José Riosmena</span>
+                        <span>Hello, I am</span>
+                        <span className="hero_name">José Riosmena</span>
                     </h1>
 
-                    <div className="hero_info">
-                        <img alt="Myself" />
+                    <div className="opacity">
+                        <div className="hero_img">
+                            <img src={HeroImg} alt="" height="500px" />
+                        </div>
                     </div>
 
-                    <div className="hero_img">
-                        <PText>
-                            I am a Computer Science student from Mexico.
+                    <div className="hero_info">
+                        <PText className="hero_info_p">
+                        A Computer Science Student at Tec de Monterrey.
                         </PText>
-                        <Button
-                            btnLink="/projects"
-                            btnText="See my work"
-                        />
                     </div>
 
                     <div className="hero_social">
                         <div className="hero_social_indicator">
                             <p>Follow</p>
-                            <img src={SocialMediaArrow} alt="Arrow down icon" />
+                            <img src={SocialMediaArrow} alt="icon" />
                         </div>
 
                         <div className="hero_social_text">
-                            {SocialData.map((item, index) => (
-                                <li>
-                                    <a
-                                        href={item.link}
-                                        key={index}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        {item.text}
-                                    </a>
-                                </li>
-                            ))}
+                            <ul>
+                                {SocialData.map((item, index) => (
+                                    <li key={index}>
+                                        <a href={item.link} target="_blank" rel="noreferrer">
+                                            {item.title}
+                                        </a>
+                                    </li>    
+                                ))}
+                            </ul>
                         </div>
+                    </div>
+
+                    <div className="hero_scrollDown">
+                        <p>Scroll</p>
+                        <img src={ScrollDownArrow} alt="icon" />
                     </div>
                 </div>
             </div>

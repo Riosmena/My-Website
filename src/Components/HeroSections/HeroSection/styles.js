@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const HeroSectionStyles = styled.section`
+export const HeroSectionStyles = styled.div`
     .hero {
         height: 100vh;
-        width: 100%;
         min-height: 1000px;
+        top: 50px;
+        width: 100%;
         text-align: center;
         display: flex;
         align-items: center;
@@ -16,6 +17,7 @@ export const HeroSectionStyles = styled.section`
         font-size: 2rem;
         margin-bottom: -4rem;
         position: relative;
+        z-index: 1;
 
         span {
             display: inline-block;
@@ -24,21 +26,31 @@ export const HeroSectionStyles = styled.section`
 
         .hero_name {
             font-family: "Montserrat Bold";
-            color: var(--white);
+            color: var(--green-accent);
             font-size: 7rem;
         }
     }
 
-    .hero_img {
-        max-width: 900px;
+    .opacity {
+        max-width: 800px;
         width: 100%;
-        height: 600px;
+        height: 100%;
         margin: 0 auto;
-        border: 2px solid var(--gray-1);
+        z-index: 100;
+        opacity: 0.7;
+    }
+
+    .hero_img {
+        max-width: 800px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border: 2px solid var(--white);
     }
 
     .hero_info {
         margin-top: 2rem;
+        position: relative;
     }
 
     .hero_social,
@@ -48,6 +60,7 @@ export const HeroSectionStyles = styled.section`
         gap: 2rem;
         position: absolute;
 
+        top: 60%;
         bottom: 20px;
         width: 50px;
     }
